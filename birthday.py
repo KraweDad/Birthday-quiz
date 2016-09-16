@@ -43,11 +43,11 @@ print(todaymonth,"/",todaydate,"/ 2016")
 
 Name = input("What is your name?")
 Birthmonth = float(input("What month were you born in?"))
-if Birthmonth in [9, 10, 11]:
+if Birthmonth in [month_name[9], month_name[10], month_name[11]]:
     print("Fall")
-elif Birthmonth in [12, 1, 2, 3]:
+elif Birthmonth in [month_name[12], month_name[1], month_name[2], month_name[3]]:
     print("Winter")
-elif Birthmonth in [4, 5]:
+elif Birthmonth in [month_name[4], month_name[5]]:
     print("Spring")
 else: 
     print("Summer")
