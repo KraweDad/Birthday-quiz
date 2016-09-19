@@ -41,17 +41,51 @@ todaydate = datetime.today().day
 
 print(todaymonth,"/",todaydate,"/ 2016")
 
-Name = input("What is your name?")
-Birthmonth = float(input("What month were you born in?"))
-if Birthmonth in [month_name[9], month_name[10], month_name[11]]:
-    print("Fall")
-elif Birthmonth in [month_name[12], month_name[1], month_name[2], month_name[3]]:
-    print("Winter")
-elif Birthmonth in [month_name[4], month_name[5]]:
-    print("Spring")
-else: 
-    print("Summer")
-Birthyear = float(input("What year were you born in?"))
-Birthday = float(input("What day were you born on?"))
-
-print(todaymonth,"/",todaydate,"/ 2016")
+if todaymonth== 9:
+    S = "September"
+name = input("Hello, what is your name?")
+Birthmonth = input("Hi "+ name + ", what was the name of the month you were born in?")
+Birthyear = int(input("And what year were you born in, "+ name+ "?"))
+Birthday = input("And the day?")
+if Birthday== todaydate and Birthmonth== S:
+    print("Happy birthday!")
+elif Birthmonth== "October" and Birthday== "31":
+    print("You were born on Halloween!")
+elif Birthmonth in ( "September", "October", "November", "september", "october", "november", "9", "10", "11" ):
+    if Birthyear < 1980:
+        print(name + ", you are a fall baby of the Stone Age.")
+    if Birthyear >= 1980 and Birthyear <=1989:
+        print(name + ", you are a fall baby of the eighties.")
+    if Birthyear >= 1990 and Birthyear <= 1999:
+        print(name + ", you are a fall baby of the nineties.")
+    if Birthyear >=2000:
+        print(name + ", you are a fall baby of the two thousands.")
+    
+elif Birthmonth in ("December", "January", "Febuary", "March", "december", "january", "febuary", "march", "12", "1", "2", "3"):
+    if Birthyear < 1980:
+        print(name + ", you are a winter baby of the Stone Age.")
+    if Birthyear >= 1980 and Birthyear <=1989:
+        print(name + ", you are a winter baby of the eighties.")
+    if Birthyear >= 1990 and Birthyear <= 1999:
+        print(name + ", you are a winter baby of the nineties.")
+    if Birthyear >=2000:
+        print(name + ", you are a winter baby of the two thousands.")
+        
+elif Birthmonth in ("April", "May", "april", "may", "4", "5"):
+    if Birthyear < 1980:
+        print(name + ", you are a spring baby of the Stone Age.")
+    if Birthyear >= 1980 and Birthyear <=1989:
+        print(name + ", you are a spring baby of the eighties.")
+    if Birthyear >= 1990 and Birthyear <= 1999:
+        print(name + ", you are a spring baby of the nineties.")
+    if Birthyear >=2000:
+        print(name + ", you are a spring baby of the two thousands.")
+else : 
+    if Birthyear < 1980:
+        print(name + ", you are a summer baby of the Stone Age.")
+    if Birthyear >= 1980 and Birthyear <=1989:
+        print(name + ", you are a summer baby of the eighties.")
+    if Birthyear >= 1990 and Birthyear <= 1999:
+        print(name + ", you are a summer baby of the nineties.")
+    if Birthyear >=2000:
+        print(name + ", you are a summer baby of the two thousands.")
