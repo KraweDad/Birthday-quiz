@@ -40,10 +40,30 @@ todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
 print(todaymonth,"/",todaydate,"/ 2016")
-
-if todaymonth== 9:
+if todaymonth== 1:
+    S = "January"
+elif todaymonth== 2:
+    S = "February"
+elif todaymonth== 3:
+    S = "March"
+elif todaymonth== 4:
+    S = "April"
+elif todaymonth== 5:
+    S = "May"
+elif todaymonth== 6:
+    S = "June"
+elif todaymonth== 7:
+    S = "July"
+elif todaymonth== 8:
+    S = "August"
+elif todaymonth== 9:
     S = "September"
-
+elif todaymonth== 10:
+    S = "October"
+elif todaymonth== 11:
+    S = "November"
+elif todaymonth== 12:
+    S = "December"
     
 name = input("Hello, what is your name?")
 Birthmonth = input("Hi "+ name + ", what was the name of the month you were born in?")
@@ -63,7 +83,7 @@ elif Birthmonth in ( "September", "October", "November", "september", "october",
     if Birthyear >=2000:
         print(name + ", you are a fall baby of the two thousands.")
     
-elif Birthmonth in ("December", "January", "Febuary", "March", "december", "january", "febuary", "march", "12", "1", "2", "3"):
+elif Birthmonth in ("December", "January", "February", "March", "december", "january", "february", "march", "12", "1", "2", "3"):
     if Birthyear < 1980:
         print(name + ", you are a winter baby of the Stone Age.")
     if Birthyear >= 1980 and Birthyear <=1989:
