@@ -43,10 +43,12 @@ print(todaymonth,"/",todaydate,"/ 2016")
 
 if todaymonth== 9:
     S = "September"
+
+    
 name = input("Hello, what is your name?")
 Birthmonth = input("Hi "+ name + ", what was the name of the month you were born in?")
 Birthyear = int(input("And what year were you born in, "+ name+ "?"))
-Birthday = input("And the day?")
+Birthday = int(input("And the day?"))
 if Birthday== todaydate and Birthmonth== S:
     print("Happy birthday!")
 elif Birthmonth== "October" and Birthday== "31":
