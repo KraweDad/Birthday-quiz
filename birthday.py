@@ -39,7 +39,6 @@ from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
-print(todaymonth,"/",todaydate,"/ 2016")
 if todaymonth== 1:
     S = "January"
 elif todaymonth== 2:
