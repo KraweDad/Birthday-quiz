@@ -69,9 +69,9 @@ Birthmonth = input(" Hi "+ name + ", what was the name of the month you were bor
 Birthyear = int(input(" And what year were you born in, "+ name+ "?"))
 Birthday = int(input(" And the day?"))
 if Birthday== todaydate and Birthmonth== S:
-    print("Happy birthday!")
+    print(" Happy birthday!")
 elif Birthmonth== "October" and Birthday== 31:
-    print("You were born on Halloween!")
+    print(" You were born on Halloween!")
 elif Birthmonth in ( "September", "October", "November", "september", "october", "november", "9", "10", "11" ):
     if Birthyear < 1980:
         print(name + " , you are a fall baby of the Stone Age.")
