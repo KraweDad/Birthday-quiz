@@ -74,13 +74,13 @@ elif Birthmonth== "October" and Birthday== 31:
     print(" You were born on Halloween!")
 elif Birthmonth in ( "September", "October", "November", "september", "october", "november", "9", "10", "11" ):
     if Birthyear < 1980:
-        print( name + " , you are a fall baby of the Stone Age.")
+        print( name + " ,you are a fall baby of the Stone Age.")
     if Birthyear >= 1980 and Birthyear <=1989:
-        print( name + " , you are a fall baby of the eighties.")
+        print( name + " ,you are a fall baby of the eighties.")
     if Birthyear >= 1990 and Birthyear <= 1999:
-        print( name + " , you are a fall baby of the nineties.")
+        print( name + " ,you are a fall baby of the nineties.")
     if Birthyear >=2000:
-        print( name + " , you are a fall baby of the two thousands.")
+        print( name + " ,you are a fall baby of the two thousands.")
     
 elif Birthmonth in ("December", "January", "February", "March", "december", "january", "february", "march", "12", "1", "2", "3"):
     if Birthyear < 1980:
